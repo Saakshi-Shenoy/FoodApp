@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
@@ -24,7 +24,7 @@ const Search = () => {
                     id="search_field" 
                     className="form-control" 
                     placeholder='Search your favorite Restaurant' 
-                    onChange={(e)=> setKeyword(e.target.value)}
+                    onChange={(e) => setKeyword(e.target.value)}
                 />
                 <div className="input-group-append">
                     <button id="search_btn" className="btn">
@@ -36,4 +36,4 @@ const Search = () => {
   )
 }
 
-export default Search
+export default Search;

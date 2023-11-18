@@ -49,7 +49,7 @@ function App() {
         <div className="container container-fluid">
           <Routes>
             < Route path="/" element={<Home />} exact />
-            <Route path="/eats/stores/search/:keyword" element={<Home />} exact></Route>
+            < Route path="/eats/stores/search/:keyword" element={<Home />} exact />
             < Route path="/eats/stores/:id/menus" element={<Menu />} exact />
             < Route path = "/cart" element={<Cart />} exact></Route>
             <Route path="/delivery" element={<Delivery />} exact></Route>
@@ -61,6 +61,7 @@ function App() {
             <Route path="/users/me/update" element={<UpdateProfile /> } exact></Route>
             <Route path="/users/forgetPassword" element={<ForgotPassword /> } exact></Route>
             <Route path="/users/resetPassword/token" element={<NewPassword /> } exact></Route>
+            
             <Route path="/confirm" element={<ConfirmOrder />} exact></Route>
  
 

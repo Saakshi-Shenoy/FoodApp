@@ -36,15 +36,15 @@ const ConfirmOrder = () => {
       <CheckoutSteps delivery confirmOrder />
       <div className="row d-flex justify-content-between">
         <div className="col-12 col-lg-8 mt-5 order-confirm cartt">
-          <h4 className="mb-3">Delivery Info</h4>
+          <h4 className="mb-3"><b>Delivery Info</b></h4>
           <p>
-            <b>Name:</b> {user && user.name}
+            <b>Name: </b> {user && user.name}
           </p>
           <p>
-            <b>Phone:</b> {deliveryInfo.phoneNumber}
+            <b>Phone: </b> +91 {deliveryInfo.phoneNo}
           </p>
           <p>
-            <b>Address</b>
+            <b>Address: </b>
             {`${deliveryInfo.address},${deliveryInfo.city},${deliveryInfo.postalCode},${deliveryInfo.country}`}
           </p>
           <hr />

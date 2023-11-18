@@ -14,7 +14,7 @@ const OrderDetails = ({}) => {
   const dispatch = useDispatch();
   const {id} = useParams();
   const {
-    loading,
+    loading = true,
     error,
     order = {},
   } = useSelector((state) => state.orderDetails);
@@ -40,8 +40,7 @@ const OrderDetails = ({}) => {
     deliveryInfo && 
     `${deliveryInfo.address}, ${deliveryInfo.city}, ${deliveryInfo.postalCode}, ${deliveryInfo.country}`;
    
-  const isPaid = 
-  paymentInfo && paymentInfo.status === "succeeded" ? true : false;
+  const isPaid = paymentInfo && paymentInfo.status === "succeeded" ? false : true;
 
   return (
     <>
@@ -53,15 +52,15 @@ const OrderDetails = ({}) => {
             <div className="col-12 col-lg-8 mt-1 order-details">
               <h1 className="my-5">Order # {order._id}</h1>
 
-              <h4 className="mb-4">Delivery Info</h4>
+              <h4 className="mb-4"><b>Delivery Info</b></h4>
               <p>
-                <b>Name:</b> {user && user.name}
+                <b>Name: </b> {user && user.name}
               </p>
               <p>
-                <b>Phone:</b> {deliveryInfo && deliveryInfo.phoneNo}
+                <b>Phone: </b> +91 {deliveryInfo && deliveryInfo.phoneNo}
               </p>
               <p className="mb-4">
-                <b>Address:</b>
+                <b>Address: </b>
                 {deliveryDetails}
               </p>
               <p>
@@ -79,7 +78,7 @@ const OrderDetails = ({}) => {
                 </span>
               </h4>
               <h4 className="my-4">
-                Order Status :
+                Order Status : 
                 <span
                   className={
                     order.orderStatus &&

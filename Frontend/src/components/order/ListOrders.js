@@ -119,7 +119,7 @@ const ListOrders = () => {
   return (
     <>
       <div className="cartt">
-        <h1 className="my-5">My Orders</h1>
+        <h1 className="my-2" style={{paddingBottom: "20px", paddingTop:"-30px"}}>My Orders</h1>
 
         {loading ? (
           <Loader />

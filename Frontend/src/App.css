@@ -42,7 +42,7 @@ body::after {
 /* Nav */
 
 .logo {
-  width: 30%;
+  width: 27%;
   margin-left: 20%;
 }
 
@@ -356,6 +356,11 @@ footer {
   padding: 2rem 1.5rem;
 }
 
+#pay_btn {
+  background-color:  rgb(208, 35, 35);
+  border-radius: 2rem;
+}
+
 .order-summary-values {
   float: right;
   font-weight: bold;
@@ -457,7 +462,6 @@ footer {
   clear: both;
   margin: 20px auto;
   width: auto;
-  font-family: sans-serif;
   overflow: auto;
 }
 
@@ -480,7 +484,7 @@ footer {
 }
 
 .active-step {
-  background: #be521f;
+  background: rgb(208, 35, 35);
   color: #fff;
 }
 
@@ -488,7 +492,7 @@ footer {
   float: left;
   width: 0;
   border-top: 20px solid transparent;
-  border-left: 15px solid#be521f;
+  border-left: 15px solid rgb(208, 35, 35);
   border-bottom: 20px solid transparent;
   margin-left: -1px;
 }
@@ -496,9 +500,9 @@ footer {
 .triangle2-active {
   width: 0;
   float: left;
-  border-top: 20px solid #be521f;
+  border-top: 20px solid rgb(208, 35, 35);
   border-left: 15px solid #fff;
-  border-bottom: 20px solid #be521f;
+  border-bottom: 20px solid rgb(208, 35, 35);
   margin-right: -1px;
 }
 
@@ -802,23 +806,27 @@ ul.CTAs a {
 }
 
 .orderdetails {
-  background-color: #f0dfd75e;
+  background-color: rgba(245, 240, 240, 0.89);
   color: rgb(5, 5, 5);
-  text-shadow: 1px 0px black;
   letter-spacing: 2px;
   text-decoration: solid;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: 1px solid #e3e3e3;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-top: 2rem;
 }
 
 .cartt {
-  background-color: rgb(255, 255, 255);
+margin-top: 20px;
+background-color: rgba(245, 240, 240, 0.89);
 color: black;
 font-size: large;
 font-weight: bolder;
 border: 1px solid #e3e3e3;
 border-radius: 1rem;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Add a shadow */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+padding: 30px;
 }
 
 .rest_address {

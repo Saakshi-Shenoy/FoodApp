@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch,useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link, Route, Routes } from 'react-router-dom';
 import {useAlert} from "react-alert";
 import { logout } from '../../actions/userActions';

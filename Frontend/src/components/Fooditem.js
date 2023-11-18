@@ -8,7 +8,7 @@ import { faIndianRupee } from '@fortawesome/free-solid-svg-icons';
 
 
 const Fooditem = ({ fooditem }) => {
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const [showButtons, setShowButtons] = useState(false);
 
   const dispatch = useDispatch();
@@ -48,8 +48,7 @@ const Fooditem = ({ fooditem }) => {
           .then(()=> {
             alert.success("Items added to cart");
             setShowButtons(true);
-          })
-          .catch((error)=>{
+          }).catch((error)=>{
             alert.error("Failed to add items to cart")
           });
         } else {
@@ -62,6 +61,7 @@ const Fooditem = ({ fooditem }) => {
 
   const showAddToCartButtons = () => {
     setShowButtons(true);
+    dispatch(addItemToCart(fooditem._id, quantity));
   };
 
   return (

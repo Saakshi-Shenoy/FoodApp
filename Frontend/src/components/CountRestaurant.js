@@ -22,8 +22,10 @@ const CountRestaurant = () => {
         <p>Error: {error}</p>
       ) : (
         <p className="NumOfRestro">
+          <b>
           {showVegOnly ? pureVegRestaurantCount : count}
           <span className="Restro">
+            
             {showVegOnly
               ? pureVegRestaurantCount === 1
                 ? " restaurant"
@@ -31,9 +33,10 @@ const CountRestaurant = () => {
               : count === 1
               ? " restaurant"
               : " restaurants"}
+              
           </span>
       <hr />
-      </p>)}
+      </b>  </p>)}
     </div>
   );
 }

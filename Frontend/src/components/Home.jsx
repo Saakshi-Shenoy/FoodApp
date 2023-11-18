@@ -13,7 +13,7 @@ import { useParams } from "react-router-dom";
 
 const Home = () => {
   const dispatch = useDispatch();
-  const keyword = useParams();
+  const { keyword } = useParams();
 
   const {loading: restaurantsLoading,
   error:restaurantsError,
@@ -26,7 +26,7 @@ const Home = () => {
       return alert.error(restaurantsError)
     }
     dispatch(getRestaurants(keyword));
-  }, [dispatch,restaurantsError, keyword]);
+  }, [dispatch, restaurantsError, keyword]);
 
   const handleSortByRatings = ()=>
   {
